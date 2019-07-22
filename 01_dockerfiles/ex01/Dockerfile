@@ -10,3 +10,6 @@ ENV TS3SERVER_LICENSE=accept
 EXPOSE	9987/udp 10011 30033
 
 ENTRYPOINT sh /teamspeak3-server_linux_amd64/ts3server_minimal_runscript.sh start
+
+# docker build . -t ex01
+# docker run -it --name ts -p 9987:9987/udp -p 30033:30033 -p10011:10011 --rm ex01
